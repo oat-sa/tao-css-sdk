@@ -1,0 +1,19 @@
+@import "inc/bootstrap";
+
+.qti-matchInteraction {background: red;
+/* look of the match interaction */
+
+    table.matrix {background: red;
+/* table style within the match interaction */
+        td, th {background: red;
+/* table cells and headings within the match interaction */
+        }
+        td {background: red;
+/* table cells within the match interaction */
+        }
+        th {background: red;
+/* table headings within the match interaction */
+        }
+    }
+}
+

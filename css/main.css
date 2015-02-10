@@ -1,0 +1,887 @@
+html body div.qti-item {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .empty {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .empty:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .choice-area {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .choice-area .deactivated {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .choice-area > .qti-choice {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area > li {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area > li:before {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area > li:after {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area > li > .target {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area > li > .target.active {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area > li > .target.active:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area > li > .target:first-child {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area > li.removing > div {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area > li.incomplete-pair {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area > li.incomplete-pair > div {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area .remove-choice {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area .remove-choice:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area .filled {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-associateInteraction .result-area .filled:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .result-area > li > div.filled ~ div.filled:before {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-choiceInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-choiceInteraction .qti-choice .real-label {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-choiceInteraction .block-listing > li {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-choiceInteraction .block-listing > li:first-child {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-choiceInteraction .block-listing > li:last-child {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction .text-container {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction .text-container.text-preformatted {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction input {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction .solid,
+html body div.qti-item .qti-extendedTextInteraction .bordered {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction .solid > li,
+html body div.qti-item .qti-extendedTextInteraction .bordered > li {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction .solid ~ input,
+html body div.qti-item .qti-extendedTextInteraction .solid ~ textarea,
+html body div.qti-item .qti-extendedTextInteraction .solid ~ .cke,
+html body div.qti-item .qti-extendedTextInteraction .bordered ~ input,
+html body div.qti-item .qti-extendedTextInteraction .bordered ~ textarea,
+html body div.qti-item .qti-extendedTextInteraction .bordered ~ .cke {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction .solid ~ input .cke_top,
+html body div.qti-item .qti-extendedTextInteraction .solid ~ textarea .cke_top,
+html body div.qti-item .qti-extendedTextInteraction .solid ~ .cke .cke_top,
+html body div.qti-item .qti-extendedTextInteraction .bordered ~ input .cke_top,
+html body div.qti-item .qti-extendedTextInteraction .bordered ~ textarea .cke_top,
+html body div.qti-item .qti-extendedTextInteraction .bordered ~ .cke .cke_top {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction .solid ~ input .cke_bottom,
+html body div.qti-item .qti-extendedTextInteraction .solid ~ textarea .cke_bottom,
+html body div.qti-item .qti-extendedTextInteraction .solid ~ .cke .cke_bottom,
+html body div.qti-item .qti-extendedTextInteraction .bordered ~ input .cke_bottom,
+html body div.qti-item .qti-extendedTextInteraction .bordered ~ textarea .cke_bottom,
+html body div.qti-item .qti-extendedTextInteraction .bordered ~ .cke .cke_bottom {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction .active {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction .active > input,
+html body div.qti-item .qti-extendedTextInteraction .active > textarea,
+html body div.qti-item .qti-extendedTextInteraction .active input.active,
+html body div.qti-item .qti-extendedTextInteraction .active textarea.active {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction textarea {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction textarea[disabled="disabled"] {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction .text-maxwords {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-extendedTextInteraction .text-maxwords .text-words-count {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-gapMatchInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-gapMatchInteraction .gapmatch-content {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-gapMatchInteraction .gapmatch-content audio,
+html body div.qti-item .qti-gapMatchInteraction .gapmatch-content canvas,
+html body div.qti-item .qti-gapMatchInteraction .gapmatch-content img,
+html body div.qti-item .qti-gapMatchInteraction .gapmatch-content video {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-gapMatchInteraction .gapmatch-content:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-gapMatchInteraction .gapmatch-content.empty {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-gapMatchInteraction .gapmatch-content .remove {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-gapMatchInteraction .gapmatch-content.filled {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-gapMatchInteraction .choice-area {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-gapMatchInteraction .choice-area .deactivated {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li.active {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li.active:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li.active.selectable:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li.disabled {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li img {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction .gap-filler {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction ul.ordinals {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction ul.ordinals > li {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction ul.ordinals > li:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction ul.ordinals > li.active {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction ul.ordinals > li.active:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction ul.ordinals > li.disabled {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicInteraction .source li > img {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicInteraction .active {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicInteraction .active > input,
+html body div.qti-item .qti-graphicInteraction .active > textarea,
+html body div.qti-item .qti-graphicInteraction .active input.active,
+html body div.qti-item .qti-graphicInteraction .active textarea.active {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicInteraction .image-editor {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicInteraction .image-editor .mapping-editor {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicInteraction .main-image-box {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li.active {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li.active:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li.active.selectable:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li.disabled {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction ul.source > li img {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicGapMatchInteraction .gap-filler {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction ul.ordinals {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction ul.ordinals > li {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction ul.ordinals > li:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction ul.ordinals > li.active {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction ul.ordinals > li.active:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-graphicOrderInteraction ul.ordinals > li.disabled {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-hottextInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-hottextInteraction .hottext {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-hottextInteraction .hottext:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-hottextInteraction .hottext.error {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-hottextInteraction .hottext .hottext-checkmark {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-hottextInteraction .hottext [class^="icon-"],
+html body div.qti-item .qti-hottextInteraction .hottext [class*=" icon-"] {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-hottextInteraction .hottext [class^="icon-"].small,
+html body div.qti-item .qti-hottextInteraction .hottext [class*=" icon-"].small {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-hottextInteraction .hottext [class^="icon-"].error,
+html body div.qti-item .qti-hottextInteraction .hottext [class*=" icon-"].error {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-inlineChoiceInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-matchInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-matchInteraction .matrix {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-matchInteraction .matrix tbody [data-edit] {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-mediaInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-mediaInteraction .mejs-container iframe {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-mediaInteraction .overlay {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction .arrow-bar {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction .arrow-bar span {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction .arrow-bar span.active {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction .arrow-bar span.active:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction .arrow-bar span.triggered {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-vertical {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-vertical .order-interaction-area {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-vertical ul.source,
+html body div.qti-item .qti-orderInteraction.qti-vertical ul.target,
+html body div.qti-item .qti-orderInteraction.qti-vertical ol.source,
+html body div.qti-item .qti-orderInteraction.qti-vertical ol.target {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-vertical .arrow-bar {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-vertical .arrow-bar .icon-move-before {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-vertical .arrow-bar .icon-move-behind {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-vertical .arrow-bar span {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-vertical .arrow-bar span.inactive {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-vertical .arrow-bar.middle {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-vertical .arrow-bar.middle span.inactive {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-horizontal {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-horizontal .block-listing {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-horizontal .arrow-bar {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-horizontal .arrow-bar span {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-horizontal .arrow-bar span.inactive {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-horizontal .arrow-bar span.icon-move-before {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-orderInteraction.qti-horizontal .arrow-bar span.icon-move-behind {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-rubricBlock {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-rubricBlock .qti-rubricBlock-body {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-rubricBlock > .col-12 {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction .ui-slider-horizontal {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction .ui-slider-vertical {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction .qti-slider-values {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .qti-slider-values {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-min,
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-max,
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-middle {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-min {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-max {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .qti-slider-values {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-min,
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-max,
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-middle {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-min {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-max {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .ui-slider-handle {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-textEntryInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-textEntryInteraction table {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-textEntryInteraction tr {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-textEntryInteraction .icon-bin,
+html body div.qti-item .qti-textEntryInteraction .icon-pin,
+html body div.qti-item .qti-textEntryInteraction .icon-shuffle {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-textEntryInteraction .icon-radio,
+html body div.qti-item .qti-textEntryInteraction .icon-checkbox,
+html body div.qti-item .qti-textEntryInteraction .icon-radio-checked,
+html body div.qti-item .qti-textEntryInteraction .icon-checkbox-checked {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-textEntryInteraction .icon-bin:hover,
+html body div.qti-item .qti-textEntryInteraction .icon-pin:hover,
+html body div.qti-item .qti-textEntryInteraction .icon-shuffle:hover {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-textEntryInteraction td[contenteditable],
+html body div.qti-item .qti-textEntryInteraction .main-option {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-textEntryInteraction .main-option {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-uploadInteraction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-uploadInteraction .grid-row {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-uploadInteraction .progressbar {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-uploadInteraction .btn-info {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-uploadInteraction .file-name {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-interaction {
+    /* your code goes here */
+}
+
+
+html body div.qti-item .qti-interaction .qti-prompt-container {
+    /* your code goes here */
+}
+
+
+html body div.qti-item table.matrix {
+    /* your code goes here */
+}
+
+
+html body div.qti-item table.matrix td,
+html body div.qti-item table.matrix th {
+    /* your code goes here */
+}
+
+
+html body div.qti-item table.matrix td {
+    /* your code goes here */
+}
+
+
+html body div.qti-item table.matrix th {
+    /* your code goes here */
+}
+
+
+
+/*# sourceMappingURL=main.css.map */

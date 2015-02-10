@@ -1,0 +1,223 @@
+/* All CSS will be prefixed with the cascade 'html body div.qti-item'
+to ensure you don't touch any other part of the application.
+Please also refer to the comments in inc/bootstrap
+and the files it includes directly */
+html body div.qti-item {
+  background: red;
+  /* all styles directly related to the item */
+}
+html body div.qti-item .qti-associateInteraction {
+  background: red;
+  /* look of the associate interaction */
+}
+html body div.qti-item .qti-associateInteraction .choice-area {
+  background: red;
+  /* choice area of the associate interaction */
+}
+html body div.qti-item .qti-associateInteraction .choice-area > .qti-choice {
+  background: red;
+  /* choices in the choice area of the associate interaction */
+}
+html body div.qti-item .qti-associateInteraction .result-area {
+  background: red;
+  /* result area of the associate interaction */
+}
+html body div.qti-item .qti-associateInteraction .result-area > .qti-choice {
+  background: red;
+  /* choices in the result area of the associate interaction */
+}
+html body div.qti-item .qti-choiceInteraction {
+  background: red;
+  /* look of the choice interaction */
+}
+html body div.qti-item .qti-extendedTextInteraction {
+  background: red;
+  /* look of the extended text interaction */
+}
+html body div.qti-item .qti-gapMatchInteraction {
+  background: red;
+  /* look of the gap match interaction */
+}
+html body div.qti-item .qti-graphicGapMatchInteraction {
+  background: red;
+  /* look of the graphic gap interaction */
+}
+html body div.qti-item .qti-graphicOrderInteraction {
+  background: red;
+  /* look of the graphic order interaction */
+}
+html body div.qti-item .qti-graphicInteraction {
+  background: red;
+  /* look of all graphic interactions */
+}
+html body div.qti-item .qti-hottextInteraction {
+  background: red;
+  /* look of the hottext interaction */
+}
+html body div.qti-item .qti-hottextInteraction .hottext {
+  background: red;
+}
+html body div.qti-item .qti-hottextInteraction .hottext:hover {
+  background: red;
+  /* hottext on hover */
+}
+html body div.qti-item .qti-inlineChoiceInteraction {
+  background: red;
+  /* look of the inline choice interaction
+  this uses http://select2.github.io/ so certain styles will be ignored */
+}
+html body div.qti-item .qti-matchInteraction {
+  background: red;
+  /* look of the match interaction */
+}
+html body div.qti-item .qti-matchInteraction table.matrix {
+  background: red;
+  /* table style within the match interaction */
+}
+html body div.qti-item .qti-matchInteraction table.matrix td, html body div.qti-item .qti-matchInteraction table.matrix th {
+  background: red;
+  /* table cells and headings within the match interaction */
+}
+html body div.qti-item .qti-matchInteraction table.matrix td {
+  background: red;
+  /* table cells within the match interaction */
+}
+html body div.qti-item .qti-matchInteraction table.matrix th {
+  background: red;
+  /* table headings within the match interaction */
+}
+html body div.qti-item .qti-mediaInteraction {
+  background: red;
+  /* look of the match interaction */
+}
+html body div.qti-item .qti-orderInteraction {
+  background: red;
+  /* look of the match interaction */
+}
+html body div.qti-item .qti-orderInteraction .arrow-bar {
+  background: red;
+  /* arrows in the order interaction */
+}
+html body div.qti-item .qti-orderInteraction.qti-vertical {
+  background: red;
+  /* vertical variation of the order interaction */
+}
+html body div.qti-item .qti-orderInteraction.qti-horizontal {
+  background: red;
+  /* horizontal variation of the order interaction */
+}
+html body div.qti-item .qti-orderInteraction .choice-area {
+  background: red;
+  /* choice area of the order interaction */
+}
+html body div.qti-item .qti-orderInteraction .choice-area > .qti-choice {
+  background: red;
+  /* choices in the choice area of the order interaction */
+}
+html body div.qti-item .qti-orderInteraction .result-area {
+  background: red;
+  /* result area of the order interaction */
+}
+html body div.qti-item .qti-orderInteraction .result-area > .qti-choice {
+  background: red;
+  /* choices in the result area of the order interaction */
+}
+html body div.qti-item .qti-rubricBlock {
+  background: red;
+  /* look of the rubric block */
+}
+html body div.qti-item .qti-sliderInteraction {
+  background: red;
+  /* look of the slider interaction */
+}
+html body div.qti-item .qti-sliderInteraction .qti-slider-values {
+  background: red;
+  /* slider values */
+}
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal {
+  background: red;
+  /* horizontal slider */
+}
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .qti-slider-values {
+  background: red;
+  /* slider values horizontal */
+}
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-min, html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-max, html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-middle {
+  background: red;
+  /* min|max|mid value of horizontal slider interaction */
+}
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-min {
+  background: red;
+  /* min value of horizontal slider interaction */
+}
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-max {
+  background: red;
+  /* max value of horizontal slider interaction */
+}
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical {
+  background: red;
+  /* vertical slider */
+}
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .qti-slider-values {
+  background: red;
+  /* slider values vertical */
+}
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-min, html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-max, html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-middle {
+  background: red;
+  /* min|max|mid value of vertical slider interaction */
+}
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-min {
+  background: red;
+  /* min value of vertical slider interaction */
+}
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-max {
+  background: red;
+  /* max value of vertical slider interaction */
+}
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .ui-slider-handle {
+  background: red;
+  /* mid value of vertical slider interaction */
+}
+html body div.qti-item .qti-textEntryInteraction {
+  background: red;
+  /* look of the text entry interaction
+  be aware that you work here directly on the text field */
+}
+html body div.qti-item .qti-uploadInteraction {
+  background: red;
+  /* look of the upload interaction */
+}
+html body div.qti-item .qti-uploadInteraction .progressbar {
+  background: red;
+  /* progress bar of upload interaction */
+}
+html body div.qti-item .qti-interaction {
+  background: red;
+  /* styles in here will modify all interactions
+  modifies the look of the prompt
+  copy the blocks below this line into
+  an interaction stylesheet if want just
+  edit a certain interaction type */
+}
+html body div.qti-item .qti-interaction .qti-prompt-container {
+  background: red;
+}
+html body div.qti-item table.matrix {
+  background: red;
+  /* tables have a specific style
+  this can also be copied inside an interaction if required */
+}
+html body div.qti-item table.matrix td, html body div.qti-item table.matrix th {
+  background: red;
+  /* table cells and headings inside a table */
+}
+html body div.qti-item table.matrix td {
+  background: red;
+  /* table cells inside a table */
+}
+html body div.qti-item table.matrix th {
+  background: red;
+  /* table headings inside a table */
+}
+
+/*# sourceMappingURL=reference.css.map */

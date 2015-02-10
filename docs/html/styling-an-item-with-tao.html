@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>tao-custom-stylesheets</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  page-break-before: always;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+
+.hidden-video {
+  display:none;
+}
+
+
+.embed-container {
+	
+	position: relative;
+	padding-bottom: 56.25%; /* 16/9 ratio */
+	padding-top: 30px; /* IE6 workaround*/
+	height: 0;
+	overflow: hidden;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+header {
+position: relative;
+height: 110px;
+}
+div.tao-logo {
+	width: 150px;
+	height: 94px;
+	position: absolute;
+	top: 0;
+	right: 0px;
+  background-image: url(data:image/png;base64,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);
+}
+
+div.oat-logo {
+  width: 150px;
+  height:49px;
+	position: absolute;
+	top: 22px;
+	left: 0px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAAAxCAIAAAC3esfjAAAPSUlEQVR42u1cCXBb1RXNQiAhFGjSQjtlhwJtgAIzdKFM22mHbtBlKEyhZUopFBgoJPKq7JhshKwkkAAJCYQkJIEASchKos22JFuyLW+SLMuyLcm2vMmWLWu30vP+V6wv6Un6sr5S6PjNy4zjfD3df89999177n2ZdHZi5GyMhs/aXX7roC9utg/43P6QUN8yaULRuRt9I8Gb1mouLVHOXqbizgsXle2q7p6A8CswetyBWSXKSQWyScXymDlP8k5F1wSEXw0IsecIZvMVMTNP+k7lBIQTEE5AOAHhxJiAcALCCQgnIBw/hAPeoKHHU9rmOtU88EXzgKrd1dznHRYuV/2/Gb0shEUUCLdpzjuE/lBY0jJYcMxy71bdFStUUxeWEuMqlJFZLJ+2qPQ7qyp+tb2u5Ey71j4MVuJ/NfDN3e6Asn1ot677Vbkt/5jl35+YnjpI5tOfmAqPWTaU2Y8Y+i1Ob46ExM4z93uxvs3l03YMX/6KkrIL86UrZdbekQAeS5wtTq83OCokhIPe0NpS+y3rtQQtkYQkqjArsYJMViD2Z/wyX4qkdXKx4p43a96r6vYFzx+SnsDoGTOxsB9tqbmM1RqEgbQiacIkr3DR4rI7N1cv/qLN1OsRVpJ/HDDi22csKcOcvqRschx45yaM/mLmmbiJj2B7yFsHBYNwh9aB7QVgCH5JpImfYgWrvjkbtcebnLkGr87hxla79rXKqIUlWj1FSDl5cp7kwoWlT35s6nD5hZLnr3sNRF1jREwKLcVRNuwsIoLB4bGr9XuCm5WdaxX20lbXXl0PPIfGPiyzDPKC0DEcePD9BmK2/MGLm9BRgey5Q80jgdEc4Vd8opWIl5GFxU2G7rpimQreVRCRHv3QgKNunMLMj/gz6TkIg6Phtys6RUdaGh0jN66uLGtzPfVx08LjlvQQ6rrcN6yuIEY9blHGBJor+elWXddwIBcQbiy1E/yyFBKzUDalSL6jyvFlgxCjwjq0rbILkdGzB01/32+ce9i8RdmRBsJK+/A3QM7mSwVQDTtFkts2aDuG/IJD2Or0XbKkjJfnTDuL5BcUKxBjf9kgRPB/tMkJj/phbc8WdedRY/9n+r5UECKaunqFOj1+rCsvYqaYhwZF0nu31Lhz4FF/t6OeLq1YHomZGX9O5EyLdIHsptWVTk8wWwjhvcTyyEyhwLFnuJORmQthZuGMLxS+b0sNOf9SfDFMLE86db4C4fJVr1ZcuUKFIIroKO2pOU8CPy44hO9qHFGrHwtEC2SoyV25Uv3ddZo7NlXf/nrVda9VzlxaHpEzBZbzJEtOtWUjz+P7jdDDhYtKMRF2JvuiCxaWss/EzWkLyUfiApYMIFx8qi3V0ZInvWhh6R92NSJMre1yIwFCOo+UA97sZLMTKRfURLRZJE8RqR6o7xUWQtug73JgA9jypCiu/mZn/Uqp9aTJCXcC2ZDOIrPBH09wFIkaImRkh5fi+WS+rkh+9Uo1uItxy9M55Ifra+r1WPq9KuvQ5SX0vHCZxIqTBY8lTmOvxxMYV16I6HwGm7BTw7Y86Z8+aNR3j6ROzjYpO2ZD6GQKKpDdsqZySGge55G9emSiO6scDn5Bk8Xpu//duqRC5kn36Xq+kuzM4/uMdBdaLEe0tqG8g+eK4BfueaM6qTcWSTaW2YWF0OULBTPkWvD8gzsb6CiKpP88IIzDP68cKTbvjEW0LSgmW4f6faFQ0O/zYo6OjiaQqKGfvFlDV1CBbM46LfxbCplCQWZlvy9xZQFH24BvNnicxC1SILtjY1UKkwiHwwG/DxIGg4HzA+FoVNWhpBCWnG6nn4Ii6YuHzHGfGRrst1oMzY1VTfWVmGZDdafV7PW4Y8N977eXq+jnYoHsRBLWhqzcgpW151au6bK1+LwjOULxpcNmircoln+9RNlN88nBgL+ns73FWNvUoIF4pgZtW3PDQJ8jnMTUsofQPTRgazVyVd3R3uwZGaZA+EO4vgJZ4tl+zSo12rA45hCyt5n0NUq9TmmsVRvrKjANtWr8xlin7uuOcbbbEStSw32R5IVDzYl7mqysIysb4leu6O/pzAWEx4z9lLcWK6YsKK13xNvNsMtpatTqa8rHxIMGDDoVftNqqvf7PMJCCLPotLZQFML8tafLFgMhYqcZi2kJski6/Ew714FgizTWlEdeIH6q8U+9Djv3vPnBxiqKjgpkd2+qjnVNo+0t+hQrQ01x9pHKD4fDIIOAQXmbS2oZRICOulhNp5uNUbkOEscHCeLjsjcmuVa1D8XhB8VFwYudUKtZXw3vKiCEMOjkCqnAP3V3tkchPKLvp2wXsRxpiqEnaoyAJ8WirK7xkh539OVXSa1UT4Ww3u7ycVa2pVmZUZ9nZCjVO7v82PeP7TN8f4P2shLllAWKCPMQ4R8U0xeXXblCfffm6r/tN75e3gGMEXldRg36C6NEM3M2B5r1VYZaVQoJ4S1sFqNQEDp7u/RpVE3sBoYVgXADmMZEOhSn+utV4XDU0TGvoU67rr01Gs5pbMMxZSkOs6O2DkUV1Mhv5TZ6oIg87ImPmi4h2aE0wjAUs2SHInZG6gAkzhIRduL6NZX07DsWwr5ue1qFMl5ONeIeyh5CBHEthprUFsMoRNVuboxAmHe0hQJhnvQve/RcT4LP8HgNNQ6MsVANZNUV1KAmXzpG9CGEIScrj5UR5oRig0AYGGqn0+EMRZKMmVK2xpmE9eZC2GZuNPB4d2zEMeeWDYQjblda/Fif11SvQZhKIHzu02YKhCLpC5xYtL+ng40s+Cw9Fp3iOPweWytOeIf9dT0cG+e5cgU37sXiYO4jxTmhGPkECBHH45xL6yQSPdC4IRzs7+Fj06xZjwy7GAg/o0IoefGImXtc8VQ099DCLoE3pkQ0HAgzXDkaTz/ziWnS3DOpiw8Rt8lOnPcRvjsTCEMhPicI69lsFkP2ECJL4Q+he3iQQPg8FcI8KUKDcZgG0peA3xvxCYHR69h6eoIjPdjQe07ibp4QMitHgiBUXggq4uRcfIFs9nIViDeQumDgHtmj//17Dfjr1a9WTFtUxrDhyXl5riMNhy1NtXw8G94CWWz2EPI8WSJuaWSYQLjkizZqOIMXjhYxvB5edqFTtZrquAzIxYgyiilRe+m59hBk7pmuDHLnjg1ayuYmO082pViOU/ykaYBaNoJVmfo8Hzf0vXDYfONaDZ+zsNPWwsfI8Mygsyd7CGGmoA5wHqXdgi3GGsQ+BMKdWgc19J+5pAwkS7Qm0NqU1joQuSEgHvvIZ419FEWjO2hx7MoWQ9qVGzkrHzX000mDIvmsl8uP8W7YQZpIdxKxECLOTOtIsU1xZMLrCpJUdFqb0xoNk4XbIhEpSvtMFE7h7Ddx2G1sRFODJoVLwbcizA2Ho9nzkx81UZjSQtmt6zQBTpLt87jhJPmvDM6P4jaYXOXzTFpgAqPhW9Zp0kJIOonsrSkzV0KauJy9QuWF2Igk0dKlUgjcO2sxk1im/6qVakqEXSibs17LbV5yDw1ijyfuGBgp3rC1uT4YiAb96A/+WqIXjZQCjAn01QBQpOxFdmVTzMr3vaWblE85X3+7oz6z1sXg6LWrK+F700II6wE52chl1zgeHhMRu7AEG7Z+M+HzlNT912LUIZ2I4UgfReuciF55eeV0TK4DMhDEKxtDE7KU4UtB+CIlinMjT6CjklqsyJMeqKUU5HAo8lkZrQW4OkvZOiLSX5sRhLgzfQnVyBIgHCNN4C31hBeNiAfPAfMCGZ0pzc2nXoi9CJotTiHIBR12Czc/nhQ9tPLpxcIL5isSTxc41YH+bpCtYN1cA32JZZftmi5yCoozLosDSGZlK1ZGbJa4MrwCs3Uom3urOjM2fK+um/7WSSBk00Q4DBC2kBCIkiQnHB5HsWmzki/li90GheDYw3Q5+1AtoRebYNq3rU8S4xXKLl1cllFT7x5dzzS2P4rWnDL/eGuWjdv0GEQkFZ/IYGVUBNEdmeyVJZk0IKWAcNYyJfUo+c9hs/BV++2VXUlL7YUyQIJ2D1+6Xn+3P1R4vHUyyyzTIsZvvqK0Zd06fdcmGl1QKLt9YxX/2whLkUrlSfkkFeMe6BzE/RNqkHH9a5UD2bXKUSBEhHjfFl3St4IpiSSI395QdaLjKL64xXQvrim1QzJiB8ma70SS9aUCdF2QkzvJKSuO7XROtv8WodGL6ucFhRBR983UiJcJvh7ere+PRRGCoa9swak226B/PBCSwoJ9mHRAFclTME9Q08wl5cj6H9tnhDd4/pD54T16XDGZDsqD8B3yFK2k92+rE+Q+0U6Ng+4wmDaRpw+akvVBgVZFsy8uZyVldgSFEOPX6LNK1pSbL0UN4OG9+ryjlrmft6ABFc2Sk8WKi4rkqOCOE0KMrRWdaV6P7EjFWMmGTIbNSkM85suuWaluHfAJohc0Ely1Qp3U1PKks0qUYMDfqug6YXKi6nvc5NymccDabt3AcO75Mv4caZZjKZX54rK4XDUWEgp3RiyjkjGEGPNPthL6Xywc8Z8vQ4c/+vwF7JlYn/o2RfE51RClyFjnQVTJ9WnF8qnF8skLSnMKIW5bTkmsmKa8piMAhBgLT7WlaurNaOZJv7VcVWETEj/22HhgZ/3478QUyWbMV+A1SdVeLM8dhBgP7WrMQE6hICQBqtYxExXtbG54MPe+frylxpyJZ+c/nN7gz9+uxc2pjB1GnhRH/sGGvvZBH/r2cw0hOnSYa0ay8w3hWdLfPfKzd2qZSptsHOChMXXp6fac3vVFmv8M6tWsnxTzKNMz10Lv2lytZbw6ShboD8o1hBhowZpdUp7+eGLKZDPECtxxEAZC1l8dqOvFOzMXSpizRJwSOeauNkoc/zpoEvwOdLKBe0C/3F43lUlaiACFsvh7s/kR4XHdHDHOWCMyLjBMKyTWFi0LsyfoS2fOZH1LLW7AFT20Wz+VITciAeBYa1bBuaO6SD5nYxW4t4ysntd/l4BYHFb57KfNN6/X4EpOxOq5M59oDXedfrGtbn2Z3TroO3veR12Xe5XM+sD7DUjFQGuxN9khEqgc+BJcwwfScV3kQ77QvtpecEl7Y+fumh5Hbu60NjhGXpXb/vxBI3bFjWs0kO2GNZV3bqr+467Gl0+34xJvIPOsK7P/tAQ8HIT4qL53jcK2QmpdyUz8gFQEGHfl4BLoOAZw6nYHWvq95j4PRBrxj5798o0wwxTiapgnkG2q/F+8X6J0r0QNEwAAAABJRU5ErkJggg==);
+}
+
+</style>
+</head>
+<body>
+<p><header><div class="oat-logo"></div><div class="tao-logo"></div></header></p>
+<h1>Styling an item with TAO</h1>
+<p>The TAO platform offers different ways to change the look of an item. The most obvious and simple way to work on the look is through the style editor. There is a whole chapter in this presentation - taken from the upcoming TAO User Guide - that explains how this works.</p>
+<p>The CSS SDK is based on a set of files which use the same CSS selectors we have used inside TAO and allows you to easily overwrite the default theme. It is planned to expand this SDK in the future to allow adding the same stylesheet to a large number of items. </p>
+<p>Using either the SDK or the style editor is a decision that depends what you are trying to achieve and your prior knowledge of CSS.</p>
+<h3>Simple design modifications</h3>
+<p>In this scenario you are probably best off with the built-in Style Editor. It allows you to change the colors of the background, the text and the borders. You can change the font and also the font size. You can also modify the item width but this is something we would not recommend - in the TAO platform the item is responsive which means it will automatically adapt to the size of the device you are using. On the other hand, having a setting for this is a requirement of the QTI standard and there might well be situations where a fixed item width will become necessary.</p>
+<h4>Pros</h4>
+<ul>
+<li>Requires no CSS knowledge</li>
+<li>Instant results</li>
+<li>Covers the most common scenarios</li>
+</ul>
+<h4>Cons</h4>
+<ul>
+<li>The possibilities are limited</li>
+<li>All modifications need to be repeated for each item</li>
+</ul>
+<h3>Major design modifications</h3>
+<p>This is in any case a scenario for the CSS SDK. You will need to have at least some prior knowledge of CSS. <a href="http://www.htmldog.com/reference/cssproperties/">The HTMLdog tutorial</a> will help you to get at least a basic understanding. <a href="http://tympanus.net/codrops/css_reference/">Codrops' CSS reference</a> is also very good but maybe not so much for beginners.</p>
+<p>You will also need some understanding of the browser console. All examples in this context refer to the developer console in Firefox but the concepts are very similar in all modern browsers. If you are unfamiliar with the browser console start with the tutorial on the Mozilla website. There is one that focuses on the <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector">Page Inspector</a> and another one that explains the <a href="https://developer.mozilla.org/en-US/docs/Tools/Style_Editor">Style Editor</a> (not to be confused with the Style Editor inside the TAO platform!). </p>
+<h4>Pros</h4>
+<ul>
+<li>You can profoundly change the look of an item</li>
+<li>You can apply your own corporate identity</li>
+</ul>
+<h4>Cons</h4>
+<ul>
+<li>You need to be familiar with CSS</li>
+<li>You need to know your way around the browser console</li>
+</ul>
+<p>Keep in mind that depending on the the style modifications you wish make it might be necessary to install additional software.</p>
+<h2>Built-in Style Editor</h2>
+<p><em>Note: this chapter has been taken from the upcoming TAO User Guide</em></p>
+<p>To access the Style Editor of the TAO platform, click on the Style Editor button in the Action Bar above the Properties Panel.</p>
+<p>This will turn the Properties Panel into a Style Editor panel. There are two parts to the editor, the Style Sheet Manager at the top, and the Item Style Editor down below.</p>
+<p>If you have a style sheet ready for upload, click on the <em>Add Style Sheet</em> button. This will provide an interface similar to that of adding a graphic into a Graphic Interaction. In all other cases, if you will be editing styles in a way that is special for this Item only, focus on the Style Editor below.</p>
+<p>Creating style sheets are to be handled in a whole other entry.</p>
+<p>The Style Editor, meanwhile, has three segments, governing: (1) Color, (2) Font, and (3) Item width. These can be adjusted in any order, but for the sake of this tutorial, we will be going in order from top to bottom.</p>
+<h3>Adjusting colors</h3>
+<p>There are four color swatches that can be changed in accordance with the needs of the user: Background color, Text color, Border color, and Table headings.</p>
+<p>Clicking on the swatch opens a color editor panel that consists of a square surrounded by a ring, and a text box below. The ring provides the user with a color wheel that allows changes to the color. The square provides the ability to adjust contrast (left and right) and brightness (up and down). The textbox provides the ability to save a desired specific color setting as portions of Red, Green, Blue (in RGB hexidecimal-percent of primary color density).</p>
+<p>The four swatches cover specific parts of any Item and its interactions. The Background color provides the color backing the entire item. The text color covers all text within the Item and its constituent interactions. The border color governs that of the borders of interactions. Finally, the table heading color swatch provides color to those interactions that use tables (such as Match).</p>
+<h3>Adjusting fonts</h3>
+<p>There are two font controls governing the font family selection, and the font size. Adjusting the font family involves clicking on the appropriately marked box (which should start out reading <em>Default</em>). There are a number of fonts that are built into the system, and these are divided into &quot;sans serif&quot; fonts (fonts without &quot;feet&quot; at the ends of letters), &quot;serif&quot; fonts (those with &quot;feet&quot;), and &quot;monospace&quot; fonts (fonts that resemble a typewriter, with each letter whether it be an &quot;i&quot; or an &quot;m&quot;, having the same width as the other). The large number of fonts provides for significant flexibility in Item page design, but within the Item style editor, these are the only fonts that are available. </p>
+<p>The other control allows Item authors to change the font size, pretty much to any size of font desired. To set a font size, click into the box and type in a number (13 pixel is the default). To adjust further from there, the Item author has the choice of either typing in a new number into the box, or clicking on the bigger or smaller font icons. There is no limit to the size of font that can be selected, but of course when you get past a certain size, the font will simply be too large to even partially display.</p>
+<h3>Adjusting Item width</h3>
+<p>By default the Item width adapts to the width of the user's screen. Therefore it is highly recommended that you do not change this setting.</p>
+<p>Because the QTI standard requires the ability to set an Item width on screens, the option to set a width is made available on TAO. However, setting a width that does not adapt to screen size will mean that different sized computer screens may have problems with the setting. There really is no need to adjust this under normal test authoring situations.</p>
+<p>If you do not like any of the settings you have selected, click on the eraser icon on the right of the control (the swatch or the text box), and the item will be restored to its default setting.</p>
+<p>This can be particularly useful if in playing around with the item, the end result turns out to be something wholly unreadable. Default settings are always a click away.</p>
+<h2>Working with item styles</h2>
+<p>If you compare an online test to a paper based one you could say the item is the paper you are writing on. Or if you prefer word processors you could say it is an empty document. An item will in any case contain at least one interaction and probably some portions of text or pictures. There is an extra chapter that explains how to edit interaction styles.</p>
+<p>Modifying the item style as such would typically concern the background color, the text color, the font or even the background picture.</p>
+<p>The CSS SDK uses the selector <code>html body div.qti-item</code> to modify the item directly. A custom style for an item could look like this:</p>
+<pre>
+html body div.qti-item {
+    background-color: #eeeeee;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px #dddddd solid;
+}
+</pre>
+<p>We recommend that you prefix every selector with <code>html body div.qti-item</code> to ensure you do not interfere with the appearance of the TAO platform itself.</p>
+<h3>Adding background pictures or fonts</h3>
+<p>In a regular web environment you would use the following code to add a background image:</p>
+<pre>
+html body div.qti-item {
+    background-image: url(my-image.png);
+}
+</pre>
+<p>Inside the TAO platform this is currently not possible. All external resources need to be compiled into the stylesheet by encoding them in <code>base64</code>. OAT provides a <a href="http://style.taotesting.com/tool-resource-to-base64-data-uri/">tool to convert resources to base64</a>. With an encoded image the above code looks like that:</p>
+<pre>
+// code has been shortened for readability
+html body div.qti-item {
+    background-image: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCA⤸
+    YAAABWKLW/AAAAEUlEQVR42mNgYGD4z4AGMAUANfEC/pPYlKYAAAAASUVORK5CYII=);
+}
+</pre>
+<p>The same rules apply in the scenario where you want to add an external font with the <code>@font-face</code> rules. They will also need to be encoded in <code>base64</code>. Given the browser support of TAO, you will only need the <code>*.woff</code> format. Using <code>*.woff2</code> in addition to that could help to make the item more future safe though.</p>
+<h3>Including external stylesheets with @import</h3>
+<p>As already mentioned above TAO does not support the inclusion of external resources, at least not in the way you would have expected. It is therefore not possible to include stylesheets with the <code>@import</code>-rule.</p>
+<h2>The structure of the interactions</h2>
+<p>All interactions share - as far as possible - a similar architecture. </p>
+<p>The following example is based on an <em>order interaction</em> but its basics are the same across most interactions.</p>
+<pre>
+    &lt;div class=&quot;qti-interaction qti-blockInteraction qti-orderInteraction&quot;&gt;
+        &lt;div class=&quot;qti-prompt-container&quot;&gt;
+            &lt;p class=&quot;qti-prompt&quot;&gt;Prompt&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;order-interaction-area&quot;&gt;
+            &lt;ul class=&quot;choice-area&quot;&gt;
+                &lt;li class=&quot;qti-choice&quot;&gt;...&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;ul class=&quot;result-area&quot;&gt;
+                &lt;li class=&quot;qti-choice&quot;&gt;...&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</pre>
+<p>As you can see the interaction sits in a container with the following CSS classes:</p>
+<ul>
+<li><code>qti-interaction</code></li>
+<li><code>qti-blockInteraction</code> (resp. <code>qti-inlineInteraction</code>)</li>
+<li><code>qti-orderInteraction</code> (or any other type)</li>
+</ul>
+<p>Below this level sits the <code>prompt</code>, which is embedded in a <code>qti-prompt-container</code>. The prompt is followed by two blocks, the <code>choice-area</code> and the <code>result-area</code>. This is typical for all interactions that consist of two blocks. The actual choices in this example have the class <code>qti-choice</code>.</p>
+<p>If you want to change for instance the background of the choices only in the result area of this particular interaction your selector would be as follows:</p>
+<pre>
+html body div.qti-item .qti-orderInteraction .result-area .qti-choice {
+    background: grey;
+}
+</pre>
+<p>To modify them for both areas you would write instead:</p>
+<pre>
+html body div.qti-item .qti-orderInteraction .qti-choice {
+    background: grey;
+}
+</pre>
+<p>And finally if the style should apply to all block interactions:</p>
+<pre>
+html body div.qti-item .qti-blockInteraction .qti-choice {
+    background: grey;
+}
+</pre>
+<h2>Working with the browser console</h2>
+<p>Probably one of the most important tools for a CSS developer is the browser console. In the context of this article we will concentrate on the one that comes with Firefox but the consoles in other modern browsers work very much the same way.</p>
+<p>There are two panels on the console that are of particular interest, the Inspector and the Style Editor (not to be confused with the Style Editor inside the TAO platform!).</p>
+<p>The Mozilla website has a tutorial for the browser console that pretty much focuses on the <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector">Inspector</a> and  there is also a page on the <a href="https://developer.mozilla.org/en-US/docs/Tools/Style_Editor">Style Editor</a>. </p>
+<p>It is important to note that the item and the interactions are different at design time and at runtime. When you are in the Item Creator these elements contain a number of additional parts such as toolbars, context menus etc. that are needed to edit the interaction. Inspecting the source code in this environment can be tricky or even misleading. A better way would be to display the item preview and to start the inspection there.</p>
+<h3>Finding the styles for an element</h3>
+<p>There are several strategies to find the right CSS selector to apply a particular style. The rules in the SDK are well named and commented but they cannot address every possible modification. </p>
+<p>The most straight-forward way to find a selector is to use the Inspector panel. Right-click the element and select <em>Inspect Element</em> (or similar, depending on your browser) to display it in the Inspector. It happens often that the element you have chosen does not have the style you are looking for. In this case select the parent or child elements until you see the style in the <em>Rule</em> panel. You can use the Rule panel also to try out a style before you edit your actual style sheet.</p>
+<h3>Testing a stylesheet</h3>
+<p>The complicated solution to test a stylesheet is to go to TAO's Style Editor and upload your CSS file. You will then need to reload the page, select the item again and enter into authoring mode. This is obviously very impractical and this is where the browser's style editor comes to rescue. We found that the best way to start is to use an empty stylesheet, say <code>my-custom-styles.css</code> and then to use this to test your work in the browser console. Mind you that you should not call your stylesheet <code>tao-user-styles.css</code> because this is a reserved name. While nothing will break, this could still cause confusion.</p>
+<p>If you compile your stylesheets with a pre-processor such as SASS you need at this point to perform an additional step: On the top right of the console click on the little gear (&quot;Toolbar Options&quot;) and check the box that says &quot;Show original sources&quot; (&quot;Show source maps&quot; in some other browsers). This will help you to identify which of the many source files contains the style you want to edit.</p>
+<p>When you scroll over the list of stylesheets on the left hand side of the panel, you will notice some files that start with <em>getFile</em>. One of them will have <code>my-custom-styles.css</code> at the end, this is the file you need to select. From this point you can copy/paste your new styles into this panel and the styles will be applied immediately.</p>
+<h3>What can you do if a style is not applied?</h3>
+<p>There is of course always the possibility that you have an invalid rule, a spelling mistake, a missing semicolon or anything like that. If you can rule all of this out you will need to check whether your selector is strong enough. Inspect the element in question in the browser console and find out which selector has been applied in the original CSS. It might well be that your style is there but struck through. In this case you will need to edit the selector and make it more specific. There is a <a href="http://css-tricks.com/specifics-on-css-specificity/">good article on CSS Tricks</a> to illustrate this. That said, there also an easy way out - you can simply use a <a href="http://specificity.keegan.st/">Specificity Calculator</a> to tackle the problem. Adding <code>!important</code> to a rule - as it is sometimes recommended - should always be the very last resort and only be used with great care.</p>
+<h2>Using a pre-processor for your stylesheets</h2>
+<p>In recent years it has become increasingly popular to generate stylesheets with a pre-processor such as <em>SASS</em>, <em>LESS</em> or <em>Stylus</em>. TAO uses <em>SASS</em> in the <em>SCSS</em> flavor for its stylesheets and this works very well. All source files within the SDK are available either as pure <code>*.scss</code> or as <code>*.css</code> files. If you have the chance to use SASS on your computer you should definitely do this. Of course any other pre-processor can be used but we do not provide any sources other than <em>SASS/SCSS</em>. </p>
+<p>To work with SASS, open a command line window, navigate to the <em>SCSS</em> folder of your project and type </p>
+<pre>
+sass --watch .:../css
+</pre>
+<h2>Working directly with CSS</h2>
+<p>The SDK contains a complete stylesheet with the same selectors found in the <code>*.scss</code> files. It contains no <em>CSS</em> rules but only empty selectors and comments. For the practical work you should not edit this stylesheet directly because you would essentially create a rather large CSS file of which most lines are unused. A better approach would be to start with an empty stylesheet and copy/paste the lines that you need for the rule you are working on from the original file. This way your code remains small and readable whilst keeping the SDK documentation intact.</p>
+<h2>Software and resources</h2>
+<p>The <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> Style Editor at this point is the most suitable on the market. <a href="https://www.google.com/chrome/browser/desktop/">Chrome</a> on the on the other hand requires no administration rights for installation.</p>
+<p>We recommend that you compress all pictures you create for a stylesheet. <a href="http://psydk.org/pngoptimizer">PngOptimizer</a> for Windows does this very well but there are many others too. <a href="https://tinypng.com/">TinyPNG</a> is just one of the many online services that can achieve the same. There is currently no standalone compressor for JPEG we could advise - you will need to rely on your graphics editor.</p>
+<p>When you work with fonts via <code>@font-face</code> you should not use them as an external resource, for instance via <a href="http://www.google.com/fonts">Google Fonts</a>. The reason is that you have no guarantee that a student who takes a test has also unrestricted access to the internet. Fontsquirrel has a nice <a href="http://www.fontsquirrel.com/tools/webfont-generator">generator for web fonts</a> that allows to download a font in the right format and to include it in the CSS. Remember that in order to match TAO's browser requirements you need the font only in the <em>.woff</em> format. Using <em>.woff2</em> in addition to that could help to make the item more future safe though.</p>
+<p>If you work with pictures and fonts you need to convert them into a <em>base64 data URI</em>. We have a converter on the <a href="http://style.taotesting.com/tool-resource-to-base64-data-uri/">TAO Style Guide</a> that you can use to generate data URIs.</p>
+<p>If you need a tutorial on CSS, <a href="http://www.htmldog.com/reference/cssproperties/">HTMLdog</a> has a good one. It may be a bit outdated but certainly covers most of your needs. <a href="http://tympanus.net/codrops/css_reference/">Codrops' CSS reference</a> is an excellent reference for those who already know their way around stylesheets.</p>
+<p>We found this Calculator for <a href="http://specificity.keegan.st/">CSS Specifity</a> to work nicely. </p>
+<p>The Sass website has a <a href="http://sass-lang.com/guide">beginner's guide</a> that should help you to get started. There is also a <a href="http://sass-lang.com/install">page that explains the installation</a> of SASS. You will need administrator rights for this installation.</p>
+<p>The Mozilla website has a <a href="https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector">tutorial for the browser console</a> that pretty much focuses on the aspects we are interested in. There is also a page on the <a href="https://developer.mozilla.org/en-US/docs/Tools/Style_Editor">Style Editor</a>. </p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

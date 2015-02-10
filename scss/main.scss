@@ -1,0 +1,54 @@
+@import "inc/bootstrap";
+
+// All CSS will be prefixed with the cascade 'html body div.qti-item'
+// to ensure you don't touch any other part of the application.
+
+// Please also refer to the comments in inc/bootstrap 
+// and the files it includes directly
+html body div.qti-item {
+
+    // all styles directly related to the item
+
+    @import 'inc/interactions/associate';
+    @import 'inc/interactions/choice';
+    @import 'inc/interactions/extended-text';
+    @import 'inc/interactions/gap-match';
+    @import 'inc/interactions/graphic-gap';
+    @import 'inc/interactions/graphic-order';
+    @import 'inc/interactions/graphic';
+    @import 'inc/interactions/hottext';
+    @import 'inc/interactions/inline-choice';
+    @import 'inc/interactions/match';
+    @import 'inc/interactions/media';
+    @import 'inc/interactions/order';
+    @import 'inc/interactions/rubric-block';
+    @import 'inc/interactions/slider';
+    @import 'inc/interactions/text-entry';
+    @import 'inc/interactions/upload';
+
+    .qti-interaction {
+
+        // styles in here will modify all interactions
+        // modifies the look of the prompt
+        // copy the blocks below this line into 
+        // an interaction stylesheet if want just
+        // edit a certain interaction type
+        .qti-prompt-container {
+        }
+    }
+
+    table.matrix {
+        // tables have a specific style
+        // this can also be copied inside an interaction if required
+        td, th {
+            // table cells and headings inside a table
+        }
+        td {
+            // table cells inside a table
+        }
+        th {
+            // table headings inside a table
+        }
+    }
+
+}

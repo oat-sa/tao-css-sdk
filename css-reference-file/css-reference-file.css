@@ -1,0 +1,226 @@
+/* All CSS will be prefixed with the cascade 'html body div.qti-item'
+to ensure you don't touch any other part of the application.
+Please also refer to the comments in inc/bootstrap
+and the files it includes directly */
+html body div.qti-item {  
+  /* all styles directly related to the item */
+}
+
+html body div.qti-item .qti-associateInteraction {  
+  /* look of the associate interaction */
+}
+
+html body div.qti-item .qti-associateInteraction .choice-area {  
+  /* choice area of the associate interaction */
+}
+
+html body div.qti-item .qti-associateInteraction .choice-area > .qti-choice {  
+  /* choices in the choice area of the associate interaction */
+}
+
+html body div.qti-item .qti-associateInteraction .result-area {  
+  /* result area of the associate interaction */
+}
+
+html body div.qti-item .qti-associateInteraction .result-area > .qti-choice {  
+  /* choices in the result area of the associate interaction */
+}
+
+html body div.qti-item .qti-choiceInteraction {  
+  /* look of the choice interaction */
+}
+
+html body div.qti-item .qti-extendedTextInteraction {  
+  /* look of the extended text interaction */
+}
+
+html body div.qti-item .qti-gapMatchInteraction {  
+  /* look of the gap match interaction */
+}
+
+html body div.qti-item .qti-graphicGapMatchInteraction {  
+  /* look of the graphic gap interaction */
+}
+
+html body div.qti-item .qti-graphicOrderInteraction {  
+  /* look of the graphic order interaction */
+}
+
+html body div.qti-item .qti-graphicInteraction {  
+  /* look of all graphic interactions */
+}
+
+html body div.qti-item .qti-hottextInteraction {  
+  /* look of the hottext interaction */
+}
+
+html body div.qti-item .qti-hottextInteraction .hottext {  
+}
+
+html body div.qti-item .qti-hottextInteraction .hottext:hover {  
+  /* hottext on hover */
+}
+
+html body div.qti-item .qti-inlineChoiceInteraction {  
+  /* look of the inline choice interaction
+  this uses http://select2.github.io/ so certain styles will be ignored */
+}
+
+html body div.qti-item .qti-matchInteraction {  
+  /* look of the match interaction */
+}
+
+html body div.qti-item .qti-matchInteraction table.matrix {  
+  /* table style within the match interaction */
+}
+
+html body div.qti-item .qti-matchInteraction table.matrix td,
+html body div.qti-item .qti-matchInteraction table.matrix th {  
+  /* table cells and headings within the match interaction */
+}
+
+html body div.qti-item .qti-matchInteraction table.matrix td {  
+  /* table cells within the match interaction */
+}
+
+html body div.qti-item .qti-matchInteraction table.matrix th {  
+  /* table headings within the match interaction */
+}
+
+html body div.qti-item .qti-mediaInteraction {  
+  /* look of the match interaction */
+}
+
+html body div.qti-item .qti-orderInteraction {  
+  /* look of the match interaction */
+}
+
+html body div.qti-item .qti-orderInteraction .arrow-bar {  
+  /* arrows in the order interaction */
+}
+
+html body div.qti-item .qti-orderInteraction.qti-vertical {  
+  /* vertical variation of the order interaction */
+}
+
+html body div.qti-item .qti-orderInteraction.qti-horizontal {  
+  /* horizontal variation of the order interaction */
+}
+
+html body div.qti-item .qti-orderInteraction .choice-area {  
+  /* choice area of the order interaction */
+}
+
+html body div.qti-item .qti-orderInteraction .choice-area > .qti-choice {  
+  /* choices in the choice area of the order interaction */
+}
+
+html body div.qti-item .qti-orderInteraction .result-area {  
+  /* result area of the order interaction */
+}
+
+html body div.qti-item .qti-orderInteraction .result-area > .qti-choice {  
+  /* choices in the result area of the order interaction */
+}
+
+html body div.qti-item .qti-rubricBlock {  
+  /* look of the rubric block */
+}
+
+html body div.qti-item .qti-sliderInteraction {  
+  /* look of the slider interaction */
+}
+
+html body div.qti-item .qti-sliderInteraction .qti-slider-values {  
+  /* slider values */
+}
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal {  
+  /* horizontal slider */
+}
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .qti-slider-values {  
+  /* slider values horizontal */
+}
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-min,
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-max,
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-middle {  
+  /* min|max|mid value of horizontal slider interaction */
+}
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-min {  
+  /* min value of horizontal slider interaction */
+}
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-horizontal .slider-max {  
+  /* max value of horizontal slider interaction */
+}
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical {  
+  /* vertical slider */
+}
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .qti-slider-values {  
+  /* slider values vertical */
+}
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-min,
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-max,
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-middle {  
+  /* min|max|mid value of vertical slider interaction */
+}
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-min {  
+  /* min value of vertical slider interaction */
+}
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .slider-max {  
+  /* max value of vertical slider interaction */
+}
+
+html body div.qti-item .qti-sliderInteraction.qti-slider-vertical .ui-slider-handle {  
+  /* mid value of vertical slider interaction */
+}
+
+html body div.qti-item .qti-textEntryInteraction {  
+  /* look of the text entry interaction
+  be aware that you work here directly on the text field */
+}
+
+html body div.qti-item .qti-uploadInteraction {  
+  /* look of the upload interaction */
+}
+
+html body div.qti-item .qti-uploadInteraction .progressbar {  
+  /* progress bar of upload interaction */
+}
+
+html body div.qti-item .qti-interaction {  
+  /* styles in here will modify all interactions
+  modifies the look of the prompt
+  copy the blocks below this line into
+  an interaction stylesheet if want just
+  edit a certain interaction type */
+}
+
+html body div.qti-item .qti-interaction .qti-prompt-container {  
+}
+
+html body div.qti-item table.matrix {  
+  /* tables have a specific style
+  this can also be copied inside an interaction if required */
+}
+
+html body div.qti-item table.matrix td,
+html body div.qti-item table.matrix th {  
+  /* table cells and headings inside a table */
+}
+
+html body div.qti-item table.matrix td {  
+  /* table cells inside a table */
+}
+
+html body div.qti-item table.matrix th {  
+  /* table headings inside a table */
+}

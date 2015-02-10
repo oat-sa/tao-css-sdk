@@ -1,0 +1,41 @@
+@import "inc/bootstrap";
+
+.qti-sliderInteraction {background: red;
+/* look of the slider interaction */
+    .qti-slider-values {background: red;
+/* slider values */
+    }
+    &.qti-slider-horizontal {background: red;
+/* horizontal slider */
+        .qti-slider-values {background: red;
+/* slider values horizontal */
+        }
+        .slider-min, .slider-max, .slider-middle {background: red;
+/* min|max|mid value of horizontal slider interaction */
+        }
+        .slider-min {background: red;
+/* min value of horizontal slider interaction */
+        }
+        .slider-max {background: red;
+/* max value of horizontal slider interaction */
+        }
+    }
+    &.qti-slider-vertical {background: red;
+/* vertical slider */
+        .qti-slider-values {background: red;
+/* slider values vertical */
+        }
+        .slider-min, .slider-max, .slider-middle {background: red;
+/* min|max|mid value of vertical slider interaction */
+        }
+        .slider-min {background: red;
+/* min value of vertical slider interaction */
+        }
+        .slider-max {background: red;
+/* max value of vertical slider interaction */
+        }
+        .ui-slider-handle {background: red;
+/* mid value of vertical slider interaction */
+        }
+    }
+}
