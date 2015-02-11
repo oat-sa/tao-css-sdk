@@ -1,0 +1,31 @@
+html body div.qti-item {
+    background-color: #eeeeee;
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px #dddddd solid;
+}
+
+html body div.qti-item .qti-blockInteraction {
+    border-radius: 5px;
+    border: 1px #00c solid;
+    width: 48%;
+    margin: 1%;
+    background-color: white;
+
+}
+
+html body div.qti-item .qti-blockInteraction .qti-prompt-container {
+    background-color: #eee;
+}
+
+html body div.qti-item .qti-blockInteraction.qti-orderInteraction {
+    border-color: orange;
+}
+
+html body div.qti-item .qti-blockInteraction .choice-area {
+    border: 1px #c00 solid;
+}
+
+html body div.qti-item .qti-blockInteraction .result-area {
+    border: 1px #0c0 solid;
+}
