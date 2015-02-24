@@ -1,6 +1,25 @@
 
 <?php
 /**
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; under version 2
+ * of the License (non-upgradable).
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+ *
+ * Copyright (c) 2014 (original work) Open Assessment Technologies SA (under the project TAO-PRODUCT);
+ *
+ */
+ 
+/**
  * Generate CSS reference file for CSS SDK
  *
  * 2015-02-09 Dieter Raber <dieter@taotesting.com>
@@ -26,19 +45,18 @@ function lineToBlockComments($matches) {
 
 // make sure you always start in project root
 $originalPath = __DIR__;
-$cssReference = $originalPath . '/css/reference.css';
+$root         = dirname(dirname($originalPath));
+$cssRefPath   = $root . '/css-reference';
 
-chdir($originalPath . '/..');
+chdir($root);
 
-
-$basePath = './scss';
-$objects  = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($basePath), RecursiveIteratorIterator::SELF_FIRST);
+$objects  = new RecursiveIteratorIterator(new RecursiveDirectoryIterator('./scss'), RecursiveIteratorIterator::SELF_FIRST);
 
 foreach($objects as $scssFile => $object){
     if(strtolower(substr(strrchr($scssFile, '.'), 1)) !== 'scss') {
         continue;
     }
-    $newPath = $originalPath . ltrim($scssFile, '.');
+    $newPath = './tasks/create-css-reference-file' . ltrim($scssFile, '.');
     createDir(dirname($newPath));
 
     // bootstrap and such
@@ -56,12 +74,12 @@ foreach($objects as $scssFile => $object){
 
 chdir($originalPath . '/scss');
 
-system('sass main.scss ../' . basename(dirname($cssReference)) . '/' . basename($cssReference) . ' --style expanded');
+system('sass main.scss ' . $cssRefPath . '/css-reference-file.css --style expanded');
 
 // remove dummy code, beautify
 $css = str_replace(
     array("background: red;", '}', "{\n", "{\r\n", ", ", '/*# sourceMappingURL=reference.css.map */'), 
     array('', "}\n", '{', '{', ",\n", ''), 
-    file_get_contents($cssReference));
-createDir(dirname($originalPath) . '/css-reference-file');
-file_put_contents(dirname($originalPath) . '/css-reference-file/css-reference-file.css', trim($css));
+    file_get_contents($cssRefPath . '/css-reference-file.css'));
+
+file_put_contents($cssRefPath . '/css-reference-file.css', trim($css));

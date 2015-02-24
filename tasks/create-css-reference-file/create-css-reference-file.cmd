@@ -1,4 +1,5 @@
 @echo off
+cls
 title CSS SDK: Generate CSS reference file
 
 pushd "%~dp0"

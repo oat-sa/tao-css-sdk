@@ -187,10 +187,18 @@ sass --watch .:../css
 </pre>
 
 ## Working directly with CSS
-The SDK contains a complete stylesheet with the same selectors found in the `*.scss` files. It contains no *CSS* rules but only empty selectors and comments. For the practical work you should not edit this stylesheet directly because you would essentially create a rather large CSS file of which most lines are unused. A better approach would be to start with an empty stylesheet and copy/paste the lines that you need for the rule you are working on from the original file. This way your code remains small and readable whilst keeping the SDK documentation intact.
+The SDK contains the stylesheet *css-reference/css-reference-file.css* containing the same selectors found in the `*.scss` files. It contains no *CSS* rules but only empty selectors and comments. For the practical work you should not edit this stylesheet directly because you would essentially create a rather large CSS file of which most lines are unused. A better approach would be to start with an empty stylesheet and copy/paste the lines that you need for the rule you are working on from the original file. This way your code remains small and readable whilst keeping the SDK documentation intact.
+
+## Batch apply a stylesheet to multiple items
+You can use the script `tasks/css-batch-tool/css-batch-tool.php` to apply your stylesheet to multiple items. 
+
+The command line is <pre>php css-batch-tool.php path/to/stylesheet.css</pre>. 
+
+Alternatively you can place the stylesheet (only one!) in the directory `tasks/css-batch-tool/` and call the script without an argument. <pre>php css-batch-tool.php</pre>
+
+It is assumed that the SDK is placed under `tao-root/vendors`. You can run the script from any other place, you will however need to change the line `require_once dirname(dirname(dirname(dirname(__DIR__)))) . '/tao/includes/raw_start.php';` to reflect this change.
 
 ## Software and resources
-
 The [Firefox](https://www.mozilla.org/en-US/firefox/new/) Style Editor at this point is the most suitable on the market. [Chrome](https://www.google.com/chrome/browser/desktop/) on the on the other hand requires no administration rights for installation.
 
 We recommend that you compress all pictures you create for a stylesheet. [PngOptimizer](http://psydk.org/pngoptimizer) for Windows does this very well but there are many others too. [TinyPNG](https://tinypng.com/) is just one of the many online services that can achieve the same. There is currently no standalone compressor for JPEG we could advise - you will need to rely on your graphics editor.
