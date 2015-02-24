@@ -190,11 +190,11 @@ sass --watch .:../css
 The SDK contains the stylesheet *css-reference/css-reference-file.css* containing the same selectors found in the `*.scss` files. It contains no *CSS* rules but only empty selectors and comments. For the practical work you should not edit this stylesheet directly because you would essentially create a rather large CSS file of which most lines are unused. A better approach would be to start with an empty stylesheet and copy/paste the lines that you need for the rule you are working on from the original file. This way your code remains small and readable whilst keeping the SDK documentation intact.
 
 ## Batch apply a stylesheet to multiple items
-You can use the script `tasks/css-batch-tool/css-batch-tool.php` to apply your stylesheet to multiple items. 
+You can use the script `tasks/css-batch-tool/css-batch-tool.php` to apply your stylesheet to multiple items. Make sure you have the right permissions on the item directory that on a regular installation resides under `/data/taoItems/itemData`. You should act under the same user name your server does. Under the assumption that this is `www-data` and you are running a `*nix` system, type on the command line <pre>sudo -u www-data // along with one of the following commands</pre>
 
-The command line is <pre>php css-batch-tool.php path/to/stylesheet.css</pre>. 
+The command line is <pre>sudo -u www-data php css-batch-tool.php path/to/stylesheet.css</pre>. 
 
-Alternatively you can place the stylesheet (only one!) in the directory `tasks/css-batch-tool/` and call the script without an argument. <pre>php css-batch-tool.php</pre>
+Alternatively you can place the stylesheet (only one!) in the directory `tasks/css-batch-tool/` and call the script without an argument. <pre>sudo -u www-data php css-batch-tool.php</pre>
 
 It is assumed that the SDK is placed under `tao-root/vendors`. You can run the script from any other place, you will however need to change the line `require_once dirname(dirname(dirname(dirname(__DIR__)))) . '/tao/includes/raw_start.php';` to reflect this change.
 

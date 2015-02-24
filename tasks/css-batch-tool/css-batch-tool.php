@@ -39,7 +39,7 @@ try {
     // ...or a _single_ CSS file in the same directory
     else {
         if(!is_file($argv[1])) {
-            throw new Exception('No CSS file found at ' . $argv[1]);
+            throw new Exception('CSS file ' . $argv[1] . ' not found');
         }
         $cssFile = $argv[1];
     }
