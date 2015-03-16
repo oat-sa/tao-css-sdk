@@ -95,7 +95,7 @@ html body div.qti-item {
 ```
 Inside the TAO platform this is currently not possible. All external resources need to be compiled into the stylesheet by encoding them in `base64`. OAT provides a [tool to convert resources to base64](http://style.taotesting.com/tool-resource-to-base64-data-uri/). With an encoded image the above code looks like that:
 ```css
-// code has been shortened for readability
+/* code has been shortened for readability */
 html body div.qti-item {
     background-image: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCA⤸
     YAAABWKLW/AAAAEUlEQVR42mNgYGD4z4AGMAUANfEC/pPYlKYAAAAASUVORK5CYII=);
