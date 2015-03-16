@@ -119,7 +119,7 @@ html body div.qti-item .item-instruction {
 All interactions share - as far as possible - a similar architecture. 
 
 The following example is based on an *order interaction* but its basics are the same across most interactions.
-<pre>
+```html
     &lt;div class=&quot;qti-interaction qti-blockInteraction qti-orderInteraction&quot;&gt;
         &lt;div class=&quot;qti-prompt-container&quot;&gt;
             &lt;p class=&quot;qti-prompt&quot;&gt;Prompt&lt;/p&gt;
@@ -133,7 +133,7 @@ The following example is based on an *order interaction* but its basics are the 
             &lt;/ul&gt;
         &lt;/div&gt;
     &lt;/div&gt;
-</pre>
+```
 
 As you can see the interaction sits in a container with the following CSS classes:
 
