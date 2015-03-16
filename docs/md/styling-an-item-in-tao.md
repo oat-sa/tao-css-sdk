@@ -107,13 +107,21 @@ The same rules apply in the scenario where you want to add an external font with
 #### Including external stylesheets with @import
 As already mentioned above TAO does not support the inclusion of external resources, at least not in the way you would have expected. It is therefore not possible to include stylesheets with the `@import`-rule.
 
-#### Deactivating items information messages
-Items may show information about how to complete the interactions they contain e.g. **You can select maximum 2 choices**. In particular project contexts, this information could give (too much) clues to candidates. The example below describes how to hide these information messages.
+#### Deactivating item messages
+Items may show information about how to complete the interactions they contain e.g. **You can select maximum 2 choices**. In particular project contexts, this information could give (too much) clues to candidates. The example below describes how to hide these messages globally.
 ```css
 html body div.qti-item .item-instruction {
     display: none;
+}
 ```
-</pre>
+
+#### Deactivating item information messages
+Sometimes you may want item information messages (the blue ones) only to be hidden. The example below describes how to achieve this.
+```css
+html body div.qti-item .item-instruction.feedback-info {
+    display: none;
+}
+```
 
 ## The structure of the interactions
 All interactions share - as far as possible - a similar architecture. 
@@ -144,25 +152,25 @@ As you can see the interaction sits in a container with the following CSS classe
 Below this level sits the `prompt`, which is embedded in a `qti-prompt-container`. The prompt is followed by two blocks, the `choice-area` and the `result-area`. This is typical for all interactions that consist of two blocks. The actual choices in this example have the class `qti-choice`.
 
 If you want to change for instance the background of the choices only in the result area of this particular interaction your selector would be as follows:
-<pre>
+```css
 html body div.qti-item .qti-orderInteraction .result-area .qti-choice {
     background: grey;
 }
-</pre>
+```
 
 To modify them for both areas you would write instead:
-<pre>
+```css
 html body div.qti-item .qti-orderInteraction .qti-choice {
     background: grey;
 }
-</pre>
+```
 
 And finally if the style should apply to all block interactions:
-<pre>
+```css
 html body div.qti-item .qti-blockInteraction .qti-choice {
     background: grey;
 }
-</pre>
+```
 
 ## Working with the browser console
 Probably one of the most important tools for a CSS developer is the browser console. In the context of this article we will concentrate on the one that comes with Firefox but the consoles in other modern browsers work very much the same way.
