@@ -120,19 +120,19 @@ All interactions share - as far as possible - a similar architecture.
 
 The following example is based on an *order interaction* but its basics are the same across most interactions.
 ```html
-    &lt;div class=&quot;qti-interaction qti-blockInteraction qti-orderInteraction&quot;&gt;
-        &lt;div class=&quot;qti-prompt-container&quot;&gt;
-            &lt;p class=&quot;qti-prompt&quot;&gt;Prompt&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;order-interaction-area&quot;&gt;
-            &lt;ul class=&quot;choice-area&quot;&gt;
-                &lt;li class=&quot;qti-choice&quot;&gt;...&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;ul class=&quot;result-area&quot;&gt;
-                &lt;li class=&quot;qti-choice&quot;&gt;...&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+    <div class="qti-interaction qti-blockInteraction qti-orderInteraction">
+      <div class="qti-prompt-container">
+        <p class="qti-prompt">Prompt</p>;
+      </div>
+      <div class=&quot;order-interaction-area">
+        <ul class="choice-area">
+          <li class="qti-choice">...</li>
+        </ul>
+        <ul class="result-area">
+          <li class="qti-choice">...</li>
+        </ul>
+      </div>
+    </div>
 ```
 
 As you can see the interaction sits in a container with the following CSS classes:
