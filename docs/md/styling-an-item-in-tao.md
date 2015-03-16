@@ -107,7 +107,7 @@ html body div.qti-item {
 
 The same rules apply in the scenario where you want to add an external font with the `@font-face` rules. They will also need to be encoded in `base64`. Given the browser support of TAO, you will only need the `*.woff` format. Using `*.woff2` in addition to that could help to make the item more future safe though.
 
-#### Deactivating item messages
+#### Deactivating item messages globally
 Items may show information about how to complete the interactions they contain e.g. **You can select maximum 2 choices**. In particular project contexts, this information could give (too much) clues to candidates. The example below describes how to hide these messages globally.
 ```css
 html body div.qti-item .item-instruction {
@@ -116,9 +116,33 @@ html body div.qti-item .item-instruction {
 ```
 
 #### Deactivating item information messages
-Sometimes you may want item information messages (the blue ones) only to be hidden. The example below describes how to achieve this.
+Sometimes you may want item information messages (the blue ones) only to be hidden. The example below illustrates the solution.
 ```css
 html body div.qti-item .item-instruction.feedback-info {
+    display: none;
+}
+```
+
+#### Deactivating item success messages
+Sometimes you may want item success messages (the green ones) only to be hidden. The example below describes how to do so.
+```css
+html body div.qti-item .item-instruction.feedback-success {
+    display: none;
+}
+```
+
+#### Deactivating item warning messages
+Sometimes you may want item warning messages (the orange ones) only to be hidden. Please find below how to proceed.
+```css
+html body div.qti-item .item-instruction.feedback-warning {
+    display: none;
+}
+```
+
+#### Deactivating item error messages
+Sometimes you may want item error messages (the red ones) only to be hidden. The example below describes how deactivate error messages.
+```css
+html body div.qti-item .item-instruction.feedback-error {
     display: none;
 }
 ```
