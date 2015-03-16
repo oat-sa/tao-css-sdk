@@ -83,7 +83,10 @@ html body div.qti-item {
 </pre>
 We recommend that you prefix every selector with `html body div.qti-item` to ensure you do not interfere with the appearance of the TAO platform itself.
 
-### Adding background pictures or fonts
+### Examples
+Please find below various CSS customization examples that may help to achieve what you are looking for.
+
+#### Adding background pictures or fonts
 In a regular web environment you would use the following code to add a background image:
 <pre>
 html body div.qti-item {
@@ -101,8 +104,16 @@ html body div.qti-item {
 
 The same rules apply in the scenario where you want to add an external font with the `@font-face` rules. They will also need to be encoded in `base64`. Given the browser support of TAO, you will only need the `*.woff` format. Using `*.woff2` in addition to that could help to make the item more future safe though.
 
-### Including external stylesheets with @import
+#### Including external stylesheets with @import
 As already mentioned above TAO does not support the inclusion of external resources, at least not in the way you would have expected. It is therefore not possible to include stylesheets with the `@import`-rule.
+
+#### Deactivating items information messages
+Items may show information about how to complete the interactions they contain e.g. **You can select maximum 2 choices**. In particular project contexts, this information could give (too much) clues to candidates. The example below describes how to hide these information messages.
+```css
+html body div.qti-item .item-instruction {
+    display: none;
+```
+</pre>
 
 ## The structure of the interactions
 All interactions share - as far as possible - a similar architecture. 
