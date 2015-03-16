@@ -147,6 +147,64 @@ html body div.qti-item .item-instruction.feedback-error {
 }
 ```
 
+#### Changing header texts appearance
+In this example, you can see how to customize the text headers (h1, h2, ... h6) within your items.
+```css
+html body div.qti-item .qti-itemBody h1 {
+    color: red;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+html body div.qti-item .qti-itemBody h2 {
+    color: green;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+html body div.qti-item .qti-itemBody h3 {
+    color: orange;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+html body div.qti-item .qti-itemBody h4 {
+    color: blue;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+html body div.qti-item .qti-itemBody h5 {
+    color: purple;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+html body div.qti-item .qti-itemBody h6 {
+    color: yellow;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+```
+
+#### Changing prompt appearance
+The following examples illustrates how to change the prompt of all interactions types to be displayed with a red color and bold font weight.
+```css
+html body div.qti-item .qti-blockInteraction .qti-prompt {
+    color: red;
+    font-weight: bold;
+}
+```
+
+#### Changing choices appearance in choice interactions 
+The example below describes how to change the style of all choices within an choice interaction.
+```css
+html body div.qti-item .qti-choiceInteraction .qti-simpleChoice {
+    color: green;
+    font-weight: bold;
+}
+```
+
 ## The structure of the interactions
 All interactions share - as far as possible - a similar architecture. 
 
