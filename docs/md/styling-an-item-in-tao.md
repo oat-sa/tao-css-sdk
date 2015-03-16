@@ -122,7 +122,7 @@ The following example is based on an *order interaction* but its basics are the 
 ```html
 <div class="qti-interaction qti-blockInteraction qti-orderInteraction">
   <div class="qti-prompt-container">
-    <p class="qti-prompt">Prompt</p>;
+    <p class="qti-prompt">Prompt</p>
   </div>
   <div class="order-interaction-area">
     <ul class="choice-area">
