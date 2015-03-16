@@ -73,14 +73,14 @@ If you compare an online test to a paper based one you could say the item is the
 Modifying the item style as such would typically concern the background color, the text color, the font or even the background picture.
 
 The CSS SDK uses the selector `html body div.qti-item` to modify the item directly. A custom style for an item could look like this:
-<pre>
+```css
 html body div.qti-item {
     background-color: #eeeeee;
     color: #333333;
     font-family: Arial, Helvetica, sans-serif;
     border: 2px #dddddd solid;
 }
-</pre>
+```
 We recommend that you prefix every selector with `html body div.qti-item` to ensure you do not interfere with the appearance of the TAO platform itself.
 
 ### Examples
@@ -88,19 +88,19 @@ Please find below various CSS customization examples that may help to achieve wh
 
 #### Adding background pictures or fonts
 In a regular web environment you would use the following code to add a background image:
-<pre>
+```css
 html body div.qti-item {
     background-image: url(my-image.png);
 }
-</pre>
+```
 Inside the TAO platform this is currently not possible. All external resources need to be compiled into the stylesheet by encoding them in `base64`. OAT provides a [tool to convert resources to base64](http://style.taotesting.com/tool-resource-to-base64-data-uri/). With an encoded image the above code looks like that:
-<pre>
+```css
 // code has been shortened for readability
 html body div.qti-item {
     background-image: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCA⤸
     YAAABWKLW/AAAAEUlEQVR42mNgYGD4z4AGMAUANfEC/pPYlKYAAAAASUVORK5CYII=);
 }
-</pre>
+```
 
 The same rules apply in the scenario where you want to add an external font with the `@font-face` rules. They will also need to be encoded in `base64`. Given the browser support of TAO, you will only need the `*.woff` format. Using `*.woff2` in addition to that could help to make the item more future safe though.
 
