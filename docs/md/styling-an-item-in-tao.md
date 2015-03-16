@@ -108,7 +108,7 @@ html body div.qti-item {
 The same rules apply in the scenario where you want to add an external font with the `@font-face` rules. They will also need to be encoded in `base64`. Given the browser support of TAO, you will only need the `*.woff` format. Using `*.woff2` in addition to that could help to make the item more future safe though.
 
 #### Deactivating item messages globally
-Items may show information about how to complete the interactions they contain e.g. **You can select maximum 2 choices**. In particular project contexts, this information could give (too much) clues to candidates. The example below describes how to hide these messages globally.
+Items may show information about how to complete the interactions they contain e.g. *You can select maximum X choices*. In particular project contexts, this information could give (too much) clues to candidates. The example below describes how to hide these messages globally.
 ```css
 html body div.qti-item .item-instruction {
     display: none;
