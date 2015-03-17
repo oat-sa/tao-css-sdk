@@ -73,56 +73,177 @@ If you compare an online test to a paper based one you could say the item is the
 Modifying the item style as such would typically concern the background color, the text color, the font or even the background picture.
 
 The CSS SDK uses the selector `html body div.qti-item` to modify the item directly. A custom style for an item could look like this:
-<pre>
+```css
 html body div.qti-item {
     background-color: #eeeeee;
     color: #333333;
     font-family: Arial, Helvetica, sans-serif;
     border: 2px #dddddd solid;
 }
-</pre>
+```
 We recommend that you prefix every selector with `html body div.qti-item` to ensure you do not interfere with the appearance of the TAO platform itself.
 
-### Adding background pictures or fonts
+### Including external stylesheets with @import
+As already mentioned above TAO does not support the inclusion of external resources, at least not in the way you would have expected. It is therefore not possible to include stylesheets with the `@import`-rule.
+
+### Examples
+Please find below various CSS customization examples that may help to achieve what you are looking for.
+
+#### Adding background pictures or fonts
 In a regular web environment you would use the following code to add a background image:
-<pre>
+```css
 html body div.qti-item {
     background-image: url(my-image.png);
 }
-</pre>
+```
 Inside the TAO platform this is currently not possible. All external resources need to be compiled into the stylesheet by encoding them in `base64`. OAT provides a [tool to convert resources to base64](http://style.taotesting.com/tool-resource-to-base64-data-uri/). With an encoded image the above code looks like that:
-<pre>
-// code has been shortened for readability
+```css
+/* code has been shortened for readability */
 html body div.qti-item {
     background-image: url(data:;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCA⤸
     YAAABWKLW/AAAAEUlEQVR42mNgYGD4z4AGMAUANfEC/pPYlKYAAAAASUVORK5CYII=);
 }
-</pre>
+```
 
 The same rules apply in the scenario where you want to add an external font with the `@font-face` rules. They will also need to be encoded in `base64`. Given the browser support of TAO, you will only need the `*.woff` format. Using `*.woff2` in addition to that could help to make the item more future safe though.
 
-### Including external stylesheets with @import
-As already mentioned above TAO does not support the inclusion of external resources, at least not in the way you would have expected. It is therefore not possible to include stylesheets with the `@import`-rule.
+#### Changing header texts appearance
+In this example, you can see how to customize the text headers (h1, h2, ... h6) within your items.
+```css
+html body div.qti-item .qti-itemBody h1 {
+    /* The color is defined using CSS Color Names. 
+       See http://www.w3schools.com/cssref/css_colornames.asp
+       for more colors. */
+    color: red;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+html body div.qti-item .qti-itemBody h2 {
+    /* This green color is defined using the Hexadecimal Notation. 
+       See http://www.w3schools.com/cssref/css_colorsfull.asp for 
+       more examples.*/
+    color: #00AB0E;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+html body div.qti-item .qti-itemBody h3 {
+    /* This orange color is defined using the RGB notation. See
+       http://www.w3schools.com/cssref/css_colors.asp for more 
+       examples. */
+    color: rgb(232,178,51);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+html body div.qti-item .qti-itemBody h4 {
+    /* This light blue color is defined using the RGBA notation.
+       It is the same as the RGB notation except that you 
+       can specify the "opacity" of your color. See 
+       http://www.css3maker.com/css-3-rgba.html for more 
+       information. */
+    color: blue;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+html body div.qti-item .qti-itemBody h5 {
+    color: purple;
+    font-weight: bold;
+    /* Font size is described with the rem unit, which is
+       the size relative to the root element of the document.
+       See http://www.w3.org/Style/Examples/007/units.en.html#future. */
+    font-size: 1.6rem;
+}
+
+html body div.qti-item .qti-itemBody h6 {
+    color: yellow;
+    /* Font weight can be bold, normal, or a number between
+       100 and 900 where 400 is normal and 700 is bold.
+       See http://www.w3schools.com/cssref/pr_font_weight.asp. */
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+```
+
+#### Changing prompt appearance
+The following examples illustrates how to change the prompt of all interactions types to be displayed with a red color and bold font weight.
+```css
+html body div.qti-item .qti-blockInteraction .qti-prompt {
+    color: red;
+    font-weight: bold;
+}
+```
+
+#### Changing choices appearance in choice interactions 
+The example below describes how to change the style of all choices within an choice interaction.
+```css
+html body div.qti-item .qti-choiceInteraction .qti-simpleChoice {
+    color: green;
+    font-weight: bold;
+}
+```
+
+#### Deactivating item messages globally
+Items may show information about how to complete the interactions they contain e.g. *You can select maximum X choices*. In particular project contexts, this information could give (too much) clues to candidates. The example below describes how to hide these messages globally.
+```css
+html body div.qti-item .item-instruction {
+    display: none;
+}
+```
+
+#### Deactivating item information messages
+Sometimes you may want item information messages (the blue ones) only to be hidden. The example below illustrates the solution.
+```css
+html body div.qti-item .item-instruction.feedback-info {
+    display: none;
+}
+```
+
+#### Deactivating item success messages
+Sometimes you may want item success messages (the green ones) only to be hidden. The example below describes how to do so.
+```css
+html body div.qti-item .item-instruction.feedback-success {
+    display: none;
+}
+```
+
+#### Deactivating item warning messages
+Sometimes you may want item warning messages (the orange ones) only to be hidden. Please find below how to proceed.
+```css
+html body div.qti-item .item-instruction.feedback-warning {
+    display: none;
+}
+```
+
+#### Deactivating item error messages
+Sometimes you may want item error messages (the red ones) only to be hidden. The example below describes how deactivate error messages.
+```css
+html body div.qti-item .item-instruction.feedback-error {
+    display: none;
+}
+```
 
 ## The structure of the interactions
 All interactions share - as far as possible - a similar architecture. 
 
 The following example is based on an *order interaction* but its basics are the same across most interactions.
-<pre>
-    &lt;div class=&quot;qti-interaction qti-blockInteraction qti-orderInteraction&quot;&gt;
-        &lt;div class=&quot;qti-prompt-container&quot;&gt;
-            &lt;p class=&quot;qti-prompt&quot;&gt;Prompt&lt;/p&gt;
-        &lt;/div&gt;
-        &lt;div class=&quot;order-interaction-area&quot;&gt;
-            &lt;ul class=&quot;choice-area&quot;&gt;
-                &lt;li class=&quot;qti-choice&quot;&gt;...&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;ul class=&quot;result-area&quot;&gt;
-                &lt;li class=&quot;qti-choice&quot;&gt;...&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-</pre>
+```html
+<div class="qti-interaction qti-blockInteraction qti-orderInteraction">
+  <div class="qti-prompt-container">
+    <p class="qti-prompt">Prompt</p>
+  </div>
+  <div class="order-interaction-area">
+    <ul class="choice-area">
+      <li class="qti-choice">...</li>
+    </ul>
+    <ul class="result-area">
+      <li class="qti-choice">...</li>
+    </ul>
+  </div>
+</div>
+```
 
 As you can see the interaction sits in a container with the following CSS classes:
 
@@ -133,25 +254,25 @@ As you can see the interaction sits in a container with the following CSS classe
 Below this level sits the `prompt`, which is embedded in a `qti-prompt-container`. The prompt is followed by two blocks, the `choice-area` and the `result-area`. This is typical for all interactions that consist of two blocks. The actual choices in this example have the class `qti-choice`.
 
 If you want to change for instance the background of the choices only in the result area of this particular interaction your selector would be as follows:
-<pre>
+```css
 html body div.qti-item .qti-orderInteraction .result-area .qti-choice {
     background: grey;
 }
-</pre>
+```
 
 To modify them for both areas you would write instead:
-<pre>
+```css
 html body div.qti-item .qti-orderInteraction .qti-choice {
     background: grey;
 }
-</pre>
+```
 
 And finally if the style should apply to all block interactions:
-<pre>
+```css
 html body div.qti-item .qti-blockInteraction .qti-choice {
     background: grey;
 }
-</pre>
+```
 
 ## Working with the browser console
 Probably one of the most important tools for a CSS developer is the browser console. In the context of this article we will concentrate on the one that comes with Firefox but the consoles in other modern browsers work very much the same way.
