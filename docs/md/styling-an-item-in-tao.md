@@ -107,6 +107,84 @@ html body div.qti-item {
 
 The same rules apply in the scenario where you want to add an external font with the `@font-face` rules. They will also need to be encoded in `base64`. Given the browser support of TAO, you will only need the `*.woff` format. Using `*.woff2` in addition to that could help to make the item more future safe though.
 
+#### Changing header texts appearance
+In this example, you can see how to customize the text headers (h1, h2, ... h6) within your items.
+```css
+html body div.qti-item .qti-itemBody h1 {
+    /* The color is defined using CSS Color Names. 
+       See http://www.w3schools.com/cssref/css_colornames.asp
+       for more colors. */
+    color: red;
+    font-weight: bold;
+    font-size: 2.4rem;
+}
+
+html body div.qti-item .qti-itemBody h2 {
+    /* This green color is defined using the Hexadecimal Notation. 
+       See http://www.w3schools.com/cssref/css_colorsfull.asp for 
+       more examples.*/
+    color: #00AB0E;
+    font-weight: bold;
+    font-size: 2.2rem;
+}
+
+html body div.qti-item .qti-itemBody h3 {
+    /* This orange color is defined using the RGB notation. See
+       http://www.w3schools.com/cssref/css_colors.asp for more 
+       examples. */
+    color: rgb(232,178,51);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+html body div.qti-item .qti-itemBody h4 {
+    /* This light blue color is defined using the RGBA notation.
+       It is the same as the RGB notation except that you 
+       can specify the "opacity" of your color. See 
+       http://www.css3maker.com/css-3-rgba.html for more 
+       information. */
+    color: blue;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+html body div.qti-item .qti-itemBody h5 {
+    color: purple;
+    font-weight: bold;
+    /* Font size is described with the rem unit, which is
+       the size relative to the root element of the document.
+       See http://www.w3.org/Style/Examples/007/units.en.html#future. */
+    font-size: 1.6rem;
+}
+
+html body div.qti-item .qti-itemBody h6 {
+    color: yellow;
+    /* Font weight can be bold, normal, or a number between
+       100 and 900 where 400 is normal and 700 is bold.
+       See http://www.w3schools.com/cssref/pr_font_weight.asp. */
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+```
+
+#### Changing prompt appearance
+The following examples illustrates how to change the prompt of all interactions types to be displayed with a red color and bold font weight.
+```css
+html body div.qti-item .qti-blockInteraction .qti-prompt {
+    color: red;
+    font-weight: bold;
+}
+```
+
+#### Changing choices appearance in choice interactions 
+The example below describes how to change the style of all choices within an choice interaction.
+```css
+html body div.qti-item .qti-choiceInteraction .qti-simpleChoice {
+    color: green;
+    font-weight: bold;
+}
+```
+
 #### Deactivating item messages globally
 Items may show information about how to complete the interactions they contain e.g. *You can select maximum X choices*. In particular project contexts, this information could give (too much) clues to candidates. The example below describes how to hide these messages globally.
 ```css
@@ -144,64 +222,6 @@ Sometimes you may want item error messages (the red ones) only to be hidden. The
 ```css
 html body div.qti-item .item-instruction.feedback-error {
     display: none;
-}
-```
-
-#### Changing header texts appearance
-In this example, you can see how to customize the text headers (h1, h2, ... h6) within your items.
-```css
-html body div.qti-item .qti-itemBody h1 {
-    color: red;
-    font-weight: bold;
-    font-size: 2.4rem;
-}
-
-html body div.qti-item .qti-itemBody h2 {
-    color: green;
-    font-weight: bold;
-    font-size: 2.2rem;
-}
-
-html body div.qti-item .qti-itemBody h3 {
-    color: orange;
-    font-weight: bold;
-    font-size: 2rem;
-}
-
-html body div.qti-item .qti-itemBody h4 {
-    color: blue;
-    font-weight: bold;
-    font-size: 1.8rem;
-}
-
-html body div.qti-item .qti-itemBody h5 {
-    color: purple;
-    font-weight: bold;
-    font-size: 1.6rem;
-}
-
-html body div.qti-item .qti-itemBody h6 {
-    color: yellow;
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-```
-
-#### Changing prompt appearance
-The following examples illustrates how to change the prompt of all interactions types to be displayed with a red color and bold font weight.
-```css
-html body div.qti-item .qti-blockInteraction .qti-prompt {
-    color: red;
-    font-weight: bold;
-}
-```
-
-#### Changing choices appearance in choice interactions 
-The example below describes how to change the style of all choices within an choice interaction.
-```css
-html body div.qti-item .qti-choiceInteraction .qti-simpleChoice {
-    color: green;
-    font-weight: bold;
 }
 ```
 
