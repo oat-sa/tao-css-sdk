@@ -332,6 +332,8 @@ If you need a tutorial on CSS, [HTMLdog](http://www.htmldog.com/reference/csspro
 
 We found this Calculator for [CSS Specifity](http://specificity.keegan.st/) to work nicely. 
 
+There is also a [tool](https://www.npmjs.com/package/rtlcss) that can help you to convert LTR to RTL CSS.
+
 The Sass website has a [beginner's guide](http://sass-lang.com/guide) that should help you to get started. There is also a [page that explains the installation](http://sass-lang.com/install) of SASS. You will need administrator rights for this installation.
 
 The Mozilla website has a [tutorial for the browser console](https://developer.mozilla.org/en-US/docs/Tools/Page_Inspector) that pretty much focuses on the aspects we are interested in. There is also a page on the [Style Editor](https://developer.mozilla.org/en-US/docs/Tools/Style_Editor). 
