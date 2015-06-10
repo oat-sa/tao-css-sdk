@@ -1,0 +1,41 @@
+@import "inc/bootstrap";
+
+.qti-sliderInteraction {
+    // look of the slider interaction
+    .qti-slider-values {
+        // slider values
+    }
+    &.qti-slider-horizontal {
+        // horizontal slider
+        .qti-slider-values {
+            // slider values horizontal
+        }
+        .slider-min, .slider-max, .slider-middle {
+            // min|max|mid value of horizontal slider interaction
+        }
+        .slider-min {
+            // min value of horizontal slider interaction
+        }
+        .slider-max {
+            // max value of horizontal slider interaction
+        }
+    }
+    &.qti-slider-vertical {
+        // vertical slider
+        .qti-slider-values {
+            // slider values vertical
+        }
+        .slider-min, .slider-max, .slider-middle {
+            // min|max|mid value of vertical slider interaction
+        }
+        .slider-min {
+            // min value of vertical slider interaction
+        }
+        .slider-max {
+            // max value of vertical slider interaction
+        }
+        .ui-slider-handle {
+            // mid value of vertical slider interaction
+        }
+    }
+}

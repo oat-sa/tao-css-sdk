@@ -1,0 +1,18 @@
+@import "inc/bootstrap";
+
+.qti-associateInteraction {
+    // look of the associate interaction
+
+    .choice-area {
+        // choice area of the associate interaction
+        & > .qti-choice {
+            // choices in the choice area of the associate interaction
+        }
+    }
+    .result-area {
+        // result area of the associate interaction
+        & > .qti-choice {
+            // choices in the result area of the associate interaction
+        }
+    }
+}

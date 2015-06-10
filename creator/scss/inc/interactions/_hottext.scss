@@ -1,0 +1,13 @@
+@import "inc/bootstrap";
+
+.qti-hottextInteraction {
+    // look of the hottext interaction
+
+    .hottext {
+        // the hottext field
+        
+        &:hover {
+            //hottext on hover
+        }
+    }
+}

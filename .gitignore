@@ -1,3 +1,7 @@
 /scss/.sass-cache
 /tasks/create-css-reference-file/.sass-cache
 /tasks/create-css-reference-file/scss
+
+
+creator/node_modules
+creator/npm-debug.log
