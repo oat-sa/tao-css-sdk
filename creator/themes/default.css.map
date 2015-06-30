@@ -1,8 +1,8 @@
 {
 	"version": 3,
-	"file": "main.css",
+	"file": "default.css",
 	"sources": [
-		"../scss/main.scss",
+		"../scss/default.scss",
 		"../scss/inc/_bootstrap.scss",
 		"../scss/inc/interactions/_associate.scss",
 		"../scss/inc/interactions/_choice.scss",

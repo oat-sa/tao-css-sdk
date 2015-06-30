@@ -24,7 +24,7 @@ module.exports = function(grunt) {
             },
             compile: {
                 files: {
-                    'css/main.css': 'scss/main.scss'
+                    'themes/default.css': 'scss/default.scss'
                 }
             }
         },
